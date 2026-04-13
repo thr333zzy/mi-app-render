@@ -1,14 +1,15 @@
 const express = require('express');
-const app = express();
+const path = require('path');
 
-// Render usa este puerto automáticamente
+const app = express();
 const PORT = process.env.PORT || 3000;
 
+// 👇 Esto sirve archivos estáticos (HTML, CSS, JS)
+app.use(express.static(path.join(__dirname, 'tienda')));
+
+// 👇 Ruta principal
 app.get('/', (req, res) => {
-    res.send(`
-        <h1>🚀 Aplicación desplegada en Render</h1>
-        <p>Funciona correctamente</p>
-    `);
+    res.sendFile(path.join(__dirname, 'tienda', 'index.html'));
 });
 
 app.listen(PORT, () => {

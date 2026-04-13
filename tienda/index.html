@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SportStyle Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>🏀 SportStyle</h1>
+    <nav>
+        <ul>
+            <li onclick="filtrar('all')">Todos</li>
+            <li onclick="filtrar('nike')">Nike</li>
+            <li onclick="filtrar('jordan')">Jordan</li>
+            <li onclick="filtrar('adidas')">Adidas</li>
+            <li onclick="filtrar('newbalance')">New Balance</li>
+            <li onclick="filtrar('puma')">Puma</li>
+            <li onclick="filtrar('gorras')">New Era</li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>🔥 Lo mejor del 2026 en sneakers</h2>
+    <p>Estilo, comodidad y rendimiento en un solo lugar</p>
+</section>
+
+<!-- PRODUCTOS -->
+<section class="productos" id="productos">
+
+    <!-- Nike -->
+    <div class="card nike">
+        <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/nike-air-max-90.jpg">
+        <h3>Nike Air Max 90</h3>
+        <p>$150</p>
+    </div>
+
+    <div class="card nike">
+        <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/nike-dunk-low.jpg">
+        <h3>Nike Dunk Low</h3>
+        <p>$120</p>
+    </div>
+
+    <!-- Jordan -->
+    <div class="card jordan">
+        <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/air-jordan-4.jpg">
+        <h3>Air Jordan 4</h3>
+        <p>$220</p>
+    </div>
+
+    <!-- Adidas -->
+    <div class="card adidas">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/samba.jpg">
+        <h3>Adidas Samba</h3>
+        <p>$110</p>
+    </div>
+
+    <!-- New Balance -->
+    <div class="card newbalance">
+        <img src="https://nb.scene7.com/is/image/NB/mr530sg_nb_02_i">
+        <h3>New Balance 530</h3>
+        <p>$130</p>
+    </div>
+
+    <!-- Puma -->
+    <div class="card puma">
+        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/380647/01/sv01/fnd/PNA/fmt/png">
+        <h3>Puma RS-X</h3>
+        <p>$140</p>
+    </div>
+
+    <!-- Gorra -->
+    <div class="card gorras">
+        <img src="https://m.media-amazon.com/images/I/81yKpZ4z1RL._AC_UL1500_.jpg">
+        <h3>New Era NY Cap</h3>
+        <p>$45</p>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
